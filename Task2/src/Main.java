@@ -13,12 +13,6 @@ public class Main {
     }
 
     public static String getWords(String s){
-        String[] arstr = s.replaceAll("[0-9,.;= \n]+"," ").split(" ");
-        String str = "";
-        for (int i=0; i< arstr.length-1; i++) {
-            str += arstr[i] + "\n";
-        }
-        str +=arstr[arstr.length-1];
-            return str;
+        return s.replaceAll("[0-9,.;= \n]+","\n");
     }
 }
